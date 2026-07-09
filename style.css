@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ecf,#ffcce6,#ffd6f5);
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:650px;
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(255,105,180,.4);
+    position:relative;
+    z-index:10;
+}
+
+h1{
+    color:#ff1493;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#444;
+    line-height:1.8;
+}
+
+p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:15px;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#startBtn,
+#yes,
+#giftBtn{
+    background:#ff1493;
+    color:white;
+}
+
+#startBtn:hover,
+#yes:hover,
+#giftBtn:hover{
+    transform:scale(1.08);
+}
+
+#no{
+    background:#666;
+    color:white;
+    position:absolute;
+}
+
+.buttons{
+    margin-top:40px;
+    position:relative;
+    height:220px;
+}
+
+.giftBox{
+    font-size:120px;
+    animation:bounce 1s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+/* القلوب */
+
+.heart{
+    position:absolute;
+    color:#ff1493;
+    font-size:25px;
+    animation:float 8s linear infinite;
+    opacity:.8;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
